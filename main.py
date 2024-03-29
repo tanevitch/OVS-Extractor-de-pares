@@ -158,5 +158,5 @@ for metrica, valores in metricas.items():
     metricas[metrica]["f1"] = f1_score
 
 import json
-with open('resultados.json', 'w', encoding="utf8") as fp:
+with open('resultados2.json', 'w', encoding="utf8") as fp:
     json.dump(metricas, fp, ensure_ascii=False)
