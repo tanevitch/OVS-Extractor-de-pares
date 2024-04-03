@@ -3,7 +3,7 @@ import pandas as pd
 import spacy
 nlp = spacy.load('es_core_news_lg')
 
-gt = pd.read_csv('ground_truth_75.csv', sep = '|')
+gt = pd.read_csv('ground_truth_100.csv', sep = '|')
 rtas = pd.read_csv('gpt_respuestas.csv', sep = '|')
 
 gt = gt.fillna("")
