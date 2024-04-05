@@ -1,7 +1,5 @@
 
 import pandas as pd
-import spacy
-nlp = spacy.load('es_core_news_lg')
 
 gt = pd.read_csv('ground_truth_100.csv', sep = '|')
 rtas = pd.read_csv('gpt_respuestas.csv', sep = '|')
@@ -118,7 +116,14 @@ for rta, esperada in zip(rtas.itertuples(index=False), gt.itertuples(index=False
         if (metrica_valor_rta == "" and metrica_valor_esperada==""):
             metricas[metrica]["tn"] += 1
         else:
-            if (metrica_valor_rta == metrica_valor_esperada) or (metrica_valor_rta and metrica_valor_esperada and nlp(metrica_valor_rta.lower()).similarity(nlp(metrica_valor_esperada.lower())) ==1) :
+            if metrica == "barrio":
+                if "Barrio "+metrica_valor_rta == metrica_valor_esperada:
+                    metrica_valor_rta="Barrio "+metrica_valor_rta
+                elif "Barrio Cerrado "+metrica_valor_rta == metrica_valor_esperada:
+                    metrica_valor_rta="Barrio Cerrado "+metrica_valor_rta
+                
+            
+            if (metrica_valor_rta == metrica_valor_esperada):
                 metricas[metrica]["tp"] += 1
             else:
                 metricas[metrica]["error"].append({
@@ -128,7 +133,7 @@ for rta, esperada in zip(rtas.itertuples(index=False), gt.itertuples(index=False
                 })
                 if metrica_valor_rta == "" and metrica_valor_esperada != "":
                     metricas[metrica]["fn"] += 1
-                elif (metrica_valor_esperada == "" and metrica_valor_rta != "") or (metrica_valor_rta != metrica_valor_rta):
+                elif (metrica_valor_esperada == "" and metrica_valor_rta != "") or (metrica_valor_esperada != metrica_valor_rta):
                     metricas[metrica]["fp"] += 1
                 
 
@@ -158,5 +163,5 @@ for metrica, valores in metricas.items():
     metricas[metrica]["f1"] = f1_score
 
 import json
-with open('resultados2.json', 'w', encoding="utf8") as fp:
+with open('resultados.json', 'w', encoding="utf8") as fp:
     json.dump(metricas, fp, ensure_ascii=False)
