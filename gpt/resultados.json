@@ -1,12 +1,12 @@
 {
     "direccion": {
-        "tp": 28,
-        "fp": 33,
+        "tp": 35,
+        "fp": 26,
         "fn": 5,
         "tn": 34,
-        "p": 0.45901639344262296,
-        "r": 0.8484848484848485,
-        "f1": 0.5957446808510639,
+        "p": 0.5737704918032787,
+        "r": 0.875,
+        "f1": 0.693069306930693,
         "error": [
             {
                 "contexto": "Barrio Cerrado El Paso Del Viso, Lote A22. Lote interno, 744 m2. Cercano a área deportiva y entrada del barrio. El precio publicado incluye un 35% de descuento por ser valor de preventa",
@@ -49,11 +49,6 @@
                 "respuesta_esperada": "Sgto. Cabral al 560"
             },
             {
-                "contexto": "Venta de Lote, Villa Gesell. Avenida 2 e/ Paseo 118 y 119. Lote multifamiliar. Ideal Inversores. Lote Multifamiliar de alta densidad a 2 cuadras de la playa. Excelente ubicación. Superficies: Sup. Lote: 1304.74 m2 (20.00m de frente). Zonificación: RMA. FOS 0.60. FOT 2. DENSIDAD 800 HAB/HA. C.U.V. 0.025. POTENCIAL CONSTRUCTIVO HASTA 32 UNIDADES DE VIVIENDA. Puede construirse un máximo de 2607.48 m2 distribuidos en 6 Pisos.",
-                "respuesta_predicha": "Avenida 2 e/ Paseo 118 y 119, Villa Gesell",
-                "respuesta_esperada": "Avenida 2 e/ Paseo 118 y 119"
-            },
-            {
                 "contexto": "Importante lote ubicado en excelente esquina de La Plata, con un superficie total de 1975 m2, con medidas de 32.91 m2 sobre calle 19 y 60.00 sobre calle 36. Zonificación UC/3, con un FOT de 5135 m2. El lote posee un total de 450 m2 edificados.",
                 "respuesta_predicha": "",
                 "respuesta_esperada": "calle 19 y calle 36"
@@ -74,11 +69,6 @@
                 "respuesta_esperada": "calle Las Heras esquina Falucho"
             },
             {
-                "contexto": "Te presentamos un hermoso chalet de 3 ambientes con gran parque, ubicado en La Primavera entre Zeballos y Godoy Cruz, en el barrio Las Dalias, próximo a Parque Camet. Esta propiedad posee un amplio y muy cómodo living con hogar y entrepiso con playroom con vista hacia el living. La cocina comedor se encuentra mediante barra desayunadora, cuenta con doble ventana que le otorga mucha luminosidad, mesada en L y espacio para lavarropas. Los dos dormitorios tienen amplios placares con bauleras. El baño es completo, con ducha y revestimientos cerámicos. Además, cuenta con un gran parque en el cual dispone de un quincho semicubierto, pileta y entrada pasante para autos. El chalet posee todos los servicios y se encuentra en buen estado general. Tiene paredón perimetral. El lote tiene 15 metros de frente por 26 metros de fondo, con una superficie total de 390 m2.",
-                "respuesta_predicha": "La Primavera entre Zeballos y Godoy Cruz, Las Dalias",
-                "respuesta_esperada": "La Primavera entre Zeballos y Godoy Cruz"
-            },
-            {
                 "contexto": "Casa de lote propio en esquina con terraza con parrilla. 5 ambientes en Flores. Por escritura figura la medida del terreno de 94 metros cuadrados. 4 metros de frente al NE. 8.27 metros en su otro frente al SE. 6 metros en su ochava al O. 8.45 metros en el costado SE. 12.30 metros en su costado NE. Ubicado en el barrio de Flores. A media cuadra de Av. Esteban Bonorino. A dos cuadras de Av. Carabobo.",
                 "respuesta_predicha": "Flores, esquina Av. Esteban Bonorino y Av. Carabobo",
                 "respuesta_esperada": ""
@@ -92,11 +82,6 @@
                 "contexto": "Casa sobre calle 40 e/ 22 y 23 de La Plata. Lote irregular: Frente: 9 mts. Lateral Der.: 36.85 mts. Lateral Izq.: 27.85 mts. Contra-Frente: 12.72",
                 "respuesta_predicha": "calle 40 e/ 22 y 23, La Plata",
                 "respuesta_esperada": "calle 40 e/ 22 y 23"
-            },
-            {
-                "contexto": "Ubicación: Calle 2 bis N° 1427 entre 517 y 518, Ringuelet, La Plata. Medidas del lote: 10 metros de frente por 27.5 metros de fondo. Comodidades: 2 dormitorio, cocina, living comedor, baño, garage, entrada para auto, patio, lavadero, fondo libre.",
-                "respuesta_predicha": "Calle 2 bis N° 1427 entre 517 y 518, Ringuelet",
-                "respuesta_esperada": "Calle 2 bis N° 1427 entre 517 y 518"
             },
             {
                 "contexto": "CASA SUCRE. BELGRANO R. Casa sobre lote propio de doble frente (17.35 x 35) con balcones terraza, jardín, piscina, solárium y quincho con parrilla",
@@ -124,19 +109,9 @@
                 "respuesta_esperada": ""
             },
             {
-                "contexto": "Av. Caseros esq. Lomas de Zamora, Don Bosco. Barrio Nuevo Quilmes. Bienvenido a esta impresionante casa de 7 ambientes, una joya ubicada en el codiciado Barrio Nuevo Quilmes. Este oasis se ubica en una esquina, sobre un lote espacioso de 788 m2, con amplio espacio de estacionamiento. La misma consta de dos plantas sobre un lote de 788 m2 con espacio guardacoche para varios autos. Construida sobre platea con losa estructural. Doble muro. La casa esta compuesta por un hall de recepción, amplio living-comedor con hogar a leña y vista al parque, cocina con isla central, cinco dormitorios (el principal con vestidor, baño en suite con jacuzzi y terraza), toilette, lavadero con entrada independiente, 5 baños (2 completos), amplio quincho con parrilla, cuarto de guardado, hall de entrada en el primer piso y kitchenette. Cuenta con jardín con piscina climatizada con playa húmeda e hidromasaje. Además, la casa cuenta con un sexto dormitorio de servicio con un baño completo.",
-                "respuesta_predicha": "Av. Caseros esq. Lomas de Zamora, Don Bosco",
-                "respuesta_esperada": "Av. Caseros esq. Lomas de Zamora"
-            },
-            {
                 "contexto": "Excelente lote en L con frente a la ruta 58 (Mariano Castex) Canning. El mismo posee 10 mts de frente sobre la ruta y 50 mts de fondo, un martillo de 10 mts x 40 mts (con frente a la calle lago mascardi).",
                 "respuesta_predicha": "Ruta 58 (Mariano Castex) Canning",
                 "respuesta_esperada": ""
-            },
-            {
-                "contexto": "Venta de Lote en Mataderos, Capital Federal. Lote de 8.66 x 32 USAA (22.80) 7 + 2 retiro. Superficie de la parcela 287.07 m2. Zonificación anterior R2B1. Fot: 1.6. Por normas vigentes USAA Mixtura 3. Sup. cubierta total vendible 1142.47 m2. Sup. balcon/terraza vendible 265.68 m2. Sup. total construible 1731.91 m2 + 10 espacios guarda coche en PB. Excelente ubicación sobre Av. Lisandro de La Torre 1400 entre Alberdi y E. Castro.",
-                "respuesta_predicha": "Av. Lisandro de La Torre 1400",
-                "respuesta_esperada": "Av. Lisandro de La Torre 1400 entre Alberdi y E. Castro"
             },
             {
                 "contexto": "Terreno en el barrio Altos del Mar en San Clemente del Tuyú. En calle 8 esquina calle 104 con frente al Barrio Playa Grande. Lote a 400 mts de la playa. Medidas 20 x 20 mts. El terreno tiene pilar de la luz. Tiene escritura, por lo que se escritura inmediatamente a su nombre. Lo reserva con 750 dólares, al firmar el boleto abona 4.500 dólares y al firmar la escritura abona 10.500 dólares.",
@@ -154,19 +129,9 @@
                 "respuesta_esperada": ""
             },
             {
-                "contexto": "Lote de terreno irregular en excelente ubicación. 2° Rivadavia esquina Navarro. Castelar Norte. Medidas: lote irregular: 18 x 24. Superficie total: 353.89 m2. Valor: U$s 150.000.",
-                "respuesta_predicha": "2° Rivadavia esquina Navarro, Castelar Norte",
-                "respuesta_esperada": "2° Rivadavia esquina Navarro"
-            },
-            {
                 "contexto": "Sobre Ruta 58 km 16 en Barrio San Lucas. En venta esté hermoso lote de 1112 m2 de los más grandes del barrio. Medidas exactas: Frente 43 mts. Lado izquierdo 40 mts. Lado derecho 49 mts y fondo de 15 mts.",
                 "respuesta_predicha": "Ruta 58 km 16 en Barrio San Lucas",
                 "respuesta_esperada": "Ruta 58 km 16"
-            },
-            {
-                "contexto": "Ecopueblo Alvear. Único lote disponible con salida a dos calles. Manzana 18 Lote 506. Lote irregular de 315.40 m2. Cuenta con un frente al norte de 10 mts, 34.76 mts en su lado este, 11.89 en su lado sur, y 28.32 en su lado oeste.",
-                "respuesta_predicha": "Ecopueblo Alvear, Manzana 18 Lote 506",
-                "respuesta_esperada": "Manzana 18 Lote 506"
             },
             {
                 "contexto": "Terreno en venta ubicado sobre calle 487 entre 133 y 134 (Joaquín Gorina, La Plata, Buenos Aires). Con disposición frente y orientación norte. De medidas regulares, cuenta con una superficie total aproximada de 319 m2. Acceso por calle de tierra mejorada con los servicios de electricidad, agua, gas natural y cable disponibles en la zona.",
@@ -263,13 +228,13 @@
         ]
     },
     "medidas": {
-        "tp": 71,
-        "fp": 11,
+        "tp": 73,
+        "fp": 9,
         "fn": 1,
         "tn": 17,
-        "p": 0.8658536585365854,
-        "r": 0.9861111111111112,
-        "f1": 0.9220779220779222,
+        "p": 0.8902439024390244,
+        "r": 0.9864864864864865,
+        "f1": 0.9358974358974359,
         "error": [
             {
                 "contexto": "Excelente propiedad sobre esquina con un frente lineal de 162 metros y salida a tres calles, Cabildo, Guatemala y Pilcomayo. Superficie de terreno 6200 m2. Contrapiso para camiones en casi su totalidad. Sectores descubiertos a reciclar. Zona industrial. Apto todo destino. FOT residencial: 2, FOT industrial: 1.5, FOS: 60% max.",
@@ -290,11 +255,6 @@
                 "contexto": "Venta de Lote, Villa Gesell. Avenida 2 e/ Paseo 118 y 119. Lote multifamiliar. Ideal Inversores. Lote Multifamiliar de alta densidad a 2 cuadras de la playa. Excelente ubicación. Superficies: Sup. Lote: 1304.74 m2 (20.00m de frente). Zonificación: RMA. FOS 0.60. FOT 2. DENSIDAD 800 HAB/HA. C.U.V. 0.025. POTENCIAL CONSTRUCTIVO HASTA 32 UNIDADES DE VIVIENDA. Puede construirse un máximo de 2607.48 m2 distribuidos en 6 Pisos.",
                 "respuesta_predicha": "20 x 65.24",
                 "respuesta_esperada": ""
-            },
-            {
-                "contexto": "Espectacular casa quinta en Barrio El Rodeo en La Plata. Acceso sobre ruta 215. muy buen entorno barrio familiar semi cerrado. la propiedad esta desarrolada sobre 4 lotes de 20 x 50 cada uno. la casa esta situada sobre dos lotes es de tipo chalet en una planta y consta de gran estar comedor con vista hacia la piscina",
-                "respuesta_predicha": "40 x 50",
-                "respuesta_esperada": "20 x 50"
             },
             {
                 "contexto": "Casa de doble frente de 20.903 m2 de lote. Toma departamento en parte de pago. Zona Olivos/Vicente López. La misma cuenta con un living comedor de 5 x 9.50 con pisos en cerámicos, gran cocina comedor diario refaccionada a nueva de 6.30 x 6.70 con mucha luz y vista y salida al parque, lavadero independiente, dependencia de servicio con baño, toilette con ducha. Calefacción central por radiadores. Gran parque arbolado con piscina, quincho, parrilla y entrada pasante para varios autos.",
@@ -320,11 +280,6 @@
                 "contexto": "Av. Caseros esq. Lomas de Zamora, Don Bosco. Barrio Nuevo Quilmes. Bienvenido a esta impresionante casa de 7 ambientes, una joya ubicada en el codiciado Barrio Nuevo Quilmes. Este oasis se ubica en una esquina, sobre un lote espacioso de 788 m2, con amplio espacio de estacionamiento. La misma consta de dos plantas sobre un lote de 788 m2 con espacio guardacoche para varios autos. Construida sobre platea con losa estructural. Doble muro. La casa esta compuesta por un hall de recepción, amplio living-comedor con hogar a leña y vista al parque, cocina con isla central, cinco dormitorios (el principal con vestidor, baño en suite con jacuzzi y terraza), toilette, lavadero con entrada independiente, 5 baños (2 completos), amplio quincho con parrilla, cuarto de guardado, hall de entrada en el primer piso y kitchenette. Cuenta con jardín con piscina climatizada con playa húmeda e hidromasaje. Además, la casa cuenta con un sexto dormitorio de servicio con un baño completo.",
                 "respuesta_predicha": "788 m2",
                 "respuesta_esperada": ""
-            },
-            {
-                "contexto": "Importante predio - lotes - en la mejor zona de Banfield, Lomas de Zamora. Apto ideal desarrollo inmobiliario. 4000 m2. Salida a dos calles. A 200 metros de Larroque y de Alvear. Zona residencial exclusiva. Predio a la venta en la mejor zona de Banfield, cerca de todo. Zona residencial ideal para desarrollo inmobiliario. 4000 m2 compuestos por 7 lotes, con medidas irregulares de 50 m de largo por 80 m de ancho. Doble frente con ingreso casi de 20 m. Salida a dos calles. 2.600.000 USD",
-                "respuesta_predicha": "50 x 80",
-                "respuesta_esperada": "50 x 80 x 20"
             },
             {
                 "contexto": "Espectacular lote con salida a 2 calles. Doble frente en ambas calles, 17.32m. Superficie total del lote 1375m. Zonificación USAM: Planta baja, 5 pisos y 2 retiros (pueden ser destino vivienda). A media cuadra de Av. Nazca, variedad de comercios y múltiples líneas de colectivo. Metraje de construcción total de planta baja al piso 7, habiendo contemplado dos ventilaciones (cada una de 24m.): 7000m. Aproximadamente.",
@@ -375,14 +330,19 @@
         ]
     },
     "barrio": {
-        "tp": 23,
-        "fp": 13,
+        "tp": 20,
+        "fp": 16,
         "fn": 2,
         "tn": 62,
-        "p": 0.688888888888888,
-        "r": 0.92,
-        "f1": 0.7540983606557377,
+        "p": 0.5555555555555556,
+        "r": 0.9090909090909091,
+        "f1": 0.6896551724137931,
         "error": [
+            {
+                "contexto": "Venta de Lote en Barrio Hipódromo, La Plata. Lote sobre Avenida 38 de 328 m2 superficie, el mismo posee zonificación U/C3 (AREA URBANA/ Áreas de promoción y Corredores de Acceso Principal y Complementaria) apto para desarrollo constructivos o comerciales ya que se permiten construir hasta 6 Niveles (Fos 0.6/ Fot Res. 2; Fot Com. 2.4. Den Res. 800; Den Com. 1.600/ Premios 30% en FOT y DEN.), el mismo cuenta con una casa de 3 dormitorios, cocina comedor, baño y garage, la misma se encuentra a reciclar o demoler. Morfología irregular, medidas 7.54 x 39.82 x 9.43 mts.",
+                "respuesta_predicha": "Hipódromo",
+                "respuesta_esperada": "Barrio Hipódromo"
+            },
             {
                 "contexto": "Lote de 10 x 30 en Lomas del Mirador. Excelente acceso a una cuadra de Gral Paz y 3 de Mosconi y de Tonelero. FOT 2.25. FOS 0.6.",
                 "respuesta_predicha": "Lomas del Mirador",
@@ -392,6 +352,11 @@
                 "contexto": "Casa de 4 ambientes en Lomas del Mirador. Ubicada en Melo 836, Lomas del Mirador. Lote de 8.66 x 23. Vivienda con 100 años de antigüedad aprox. (ideal modernizar o demoler) de 90 m2 Cubiertos. Cocina. Comedor. Baño. Dormitorios. Patio. Terraza. Galpón. ZONIFICACION Zona: U2B. FOS 0.6. FOT 2.25. Densidad 700. Altura Máxima 13 mts",
                 "respuesta_predicha": "Lomas del Mirador",
                 "respuesta_esperada": ""
+            },
+            {
+                "contexto": "Sólido PH en Barrio Grand Bell. Al frente, 3 ambientes con patio y jardín de 7 x 5. Son solo 2 unidades en el lote. Techo de losa con posibilidad de ampliación. Los dos dormitorios al frente. Living-comedor con cocina integrada. Baño completo. Lavadero. Patio y jardín con pequeña pileta de fibra de vidrio. La propiedad está de época. Antigüedad 40 años. Muy buena ubicación y buenos accesos.",
+                "respuesta_predicha": "Grand Bell",
+                "respuesta_esperada": "Barrio Grand Bell"
             },
             {
                 "contexto": "Ubicado en una esquina muy importante de Villa Ballester. Con acceso a varias líneas de colectivos. Frente 22 m, lateral 19.33 m y superficie de 422 m2. Cantidad de pisos a construir PB más 3 pisos. Estudio de factibilidad disponible. fot 3 + 30% en premios. Se escuchan ofertas. Se vende ya!",
@@ -457,6 +422,11 @@
                 "contexto": "Terreno en venta ubicado sobre calle 487 entre 133 y 134 (Joaquín Gorina, La Plata, Buenos Aires). Con disposición frente y orientación norte. De medidas regulares, cuenta con una superficie total aproximada de 319 m2. Acceso por calle de tierra mejorada con los servicios de electricidad, agua, gas natural y cable disponibles en la zona.",
                 "respuesta_predicha": "",
                 "respuesta_esperada": "Joaquín Gorina"
+            },
+            {
+                "contexto": "Casa construida en 2 plantas en el Barrio Cerrado Trapalanda, sobre la ruta 5. En planta baja: living, comedor, cocina integrada, 3 dormitorios, uno en suite, toilette. Lavadero separado, dependencia de servicio con baño completo. Planta alta: 2 dormitorios, uno en suite con vestidor. Jardin, galeria, pileta, parrilla",
+                "respuesta_predicha": "Trapalanda",
+                "respuesta_esperada": "Barrio Cerrado Trapalanda"
             }
         ]
     },

@@ -1,1 +1,3 @@
 .env/
+ner/output-merge/
+*.pyc

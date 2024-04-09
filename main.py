@@ -1,8 +1,10 @@
+import spacy
 
 import pandas as pd
+NLP = spacy.load("es_core_news_lg")
 
 gt = pd.read_csv('ground_truth_100.csv', sep = '|')
-rtas = pd.read_csv('gpt_respuestas.csv', sep = '|')
+rtas = pd.read_csv('rbm/respuestas.csv', sep = '|')
 
 gt = gt.fillna("")
 rtas = rtas.fillna("")
@@ -115,15 +117,8 @@ for rta, esperada in zip(rtas.itertuples(index=False), gt.itertuples(index=False
         metrica_valor_esperada = getattr(esperada, metrica)
         if (metrica_valor_rta == "" and metrica_valor_esperada==""):
             metricas[metrica]["tn"] += 1
-        else:
-            if metrica == "barrio":
-                if "Barrio "+metrica_valor_rta == metrica_valor_esperada:
-                    metrica_valor_rta="Barrio "+metrica_valor_rta
-                elif "Barrio Cerrado "+metrica_valor_rta == metrica_valor_esperada:
-                    metrica_valor_rta="Barrio Cerrado "+metrica_valor_rta
-                
-            
-            if (metrica_valor_rta == metrica_valor_esperada):
+        else:      
+            if (NLP(str(metrica_valor_rta).lower()).similarity(NLP(str(metrica_valor_esperada).lower()))) >0.9:
                 metricas[metrica]["tp"] += 1
             else:
                 metricas[metrica]["error"].append({
