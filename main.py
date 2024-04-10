@@ -3,8 +3,8 @@ import spacy
 import pandas as pd
 NLP = spacy.load("es_core_news_lg")
 
-gt = pd.read_csv('ground_truth_100.csv', sep = '|')
-rtas = pd.read_csv('rbm/respuestas.csv', sep = '|')
+gt = pd.read_csv('ground_truth_100_sin_inferencias.csv', sep = '|')
+rtas = pd.read_csv('gpt/respuestas.csv', sep = '|')
 
 gt = gt.fillna("")
 rtas = rtas.fillna("")
@@ -158,5 +158,5 @@ for metrica, valores in metricas.items():
     metricas[metrica]["f1"] = f1_score
 
 import json
-with open('resultados.json', 'w', encoding="utf8") as fp:
+with open('gpt/resultados.json', 'w', encoding="utf8") as fp:
     json.dump(metricas, fp, ensure_ascii=False)

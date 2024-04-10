@@ -2,7 +2,8 @@ import spacy
 import re 
 
 NLP = spacy.load("es_core_news_lg")
-
+dos= re.compile(r'\b(dos|doble|2|segundo)\b', re.IGNORECASE)
+tres= re.compile(r'\b(tres|triple|3|tercer)\b', re.IGNORECASE)
 def clear_altura_entre(predichos: list):
     if predichos["dir_nro"] and predichos["dir_entre"]:
         dir_altura=max(predichos["dir_nro"], key=len)
@@ -59,7 +60,7 @@ def procesar_fot(predichos: list):
 
 def procesar_irregular(predichos: list):
     for predicho in predichos:
-        if any(map(lambda subs: subs.lower() in predicho.lower()), ["irregular", "triangular","martillo","trapecio"]):
+        if any(map(lambda subs: subs.lower() in predicho.lower(), ["irregular", "triangular","martillo","trapecio"])):
             return True
     return ""
     
@@ -67,10 +68,10 @@ def get_numeros(cadena: str):
     return re.findall(r'\b\d+(?:[.,]\d+)?\b', cadena)
      
 def contiene_dos(texto):
-    return texto in ["dos","doble","2","segundo"]
+    return bool(dos.findall(texto))
 
 def contiene_tres(texto):
-    return texto in ["tres","triple","3","tercer"]
+    return bool(tres.findall(texto))
 
 def procesar_frentes(frentes_predichos):
     frentes_en_numeros= []
@@ -82,10 +83,9 @@ def procesar_frentes(frentes_predichos):
             contiene_3= contiene_tres(match.lower())
             if contiene_3:
                 frentes_en_numeros.append(3)
-    else:
-        frentes_en_numeros.append(1)
+    
 
-    return max(frentes_en_numeros)
+    return max(frentes_en_numeros) if len(frentes_en_numeros) != 0 else ""
 
 
 

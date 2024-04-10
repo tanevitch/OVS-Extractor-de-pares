@@ -107,7 +107,7 @@ METRICAS = {
 MATCHER = Matcher()
 
 
-input = pd.read_csv('ground_truth_100.csv', sep = '|')
+input = pd.read_csv('ground_truth_100_sin_inferencias.csv', sep = '|')
 input = input.fillna("")
 data = []
 for index, row in input.iterrows():
@@ -127,4 +127,4 @@ for index, row in input.iterrows():
 
 df= pd.DataFrame(data, index=None) 
 df.set_index('descripcion', inplace=True)
-df.to_csv("respuestas.csv", sep="|")   
+df.to_csv("rbm/respuestas.csv", sep="|")   

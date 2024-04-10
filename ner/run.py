@@ -1,11 +1,16 @@
 import re
 import pandas as pd
 import spacy
+
+import os.path
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from helper import procesar_direccion, procesar_fot, procesar_frentes, procesar_barrio, procesar_irregular, procesar_medidas
 
 nlp= spacy.load("output-merge/model-best")
 
-
+input = pd.read_csv('../ground_truth_100_sin_inferencias.csv', sep = '|')
+input = input.fillna("")
 data = []
 for index, row in input.iterrows():
    respuestas= {

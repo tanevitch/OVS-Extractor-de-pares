@@ -1,9 +1,10 @@
 
-import copy
 import spacy
 from spacy.matcher import Matcher as MatcherSpacy
 from spacy.matcher import DependencyMatcher as DependencyMatcherSpacy
-
+import os.path
+import sys
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from helper import procesar_barrio, procesar_direccion, procesar_fot, procesar_frentes, procesar_irregular, procesar_medidas
 
 NLP = spacy.load('es_core_news_lg')
