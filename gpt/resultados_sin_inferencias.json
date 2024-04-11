@@ -451,13 +451,13 @@
         ]
     },
     "frentes": {
-        "tp": 20,
-        "fp": 20,
+        "tp": 21,
+        "fp": 19,
         "fn": 0,
         "tn": 60,
-        "p": 0.5,
+        "p": 0.525,
         "r": 1.0,
-        "f1": 0.6666666666666666,
+        "f1": 0.6885245901639345,
         "error": [
             {
                 "contexto": "Galpón en esquina, con muy buen acceso a Panamericana y Ruta 202 (a solo 600 metros). Zonificación: área industrial I2. Características:. Altura 6 metros sin columnas. Portón: 4.80 mts. alto y 4.50 mts. ancho. Lote: 10 x 30. Cubiertos: 190 m2. Fuerza motriz. FOS 0.60. FOT 1.20.",
@@ -541,11 +541,6 @@
             },
             {
                 "contexto": "Terreno en venta ubicado sobre calle 49 y 25 (Villa Elisa, La Plata, Buenos Aires). Con disposición frente y orientación este. De medidas regulares y en condición de esquina, cuenta con 13 mts de frente por 33 mts, contabilizando una superficie total de 438 mts2. Dispone de una gran forestación. Acceso por calle de ripio y con los servicios de electricidad y agua corriente disponibles en el lugar.",
-                "respuesta_predicha": 2.0,
-                "respuesta_esperada": ""
-            },
-            {
-                "contexto": "Partido de San Fernando PBA. Terreno en forma de L con su frente principal sobre la avenida y un segundo frente sobre la calle lateral Don Orione. Frente: 19.66 m, lateral derecho: 46.90 m, lateral izquierdo: 46.95 m, fondo: 26.20 m. Zonificacion: C2. Superficie: 2000 m2. F.O.T: 3. F.O.S: 0.6. Densidad: 900 Hab./Ha. Ret. Frente: No hay",
                 "respuesta_predicha": 2.0,
                 "respuesta_esperada": ""
             },

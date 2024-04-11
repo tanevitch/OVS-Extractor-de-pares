@@ -375,13 +375,13 @@
         ]
     },
     "barrio": {
-        "tp": 17,
-        "fp": 19,
+        "tp": 24,
+        "fp": 12,
         "fn": 2,
         "tn": 62,
-        "p": 0.4722222222222222,
-        "r": 0.8947368421052632,
-        "f1": 0.6181818181818182,
+        "p": 0.6666666666666666,
+        "r": 0.9230769230769231,
+        "f1": 0.7741935483870968,
         "error": [
             {
                 "contexto": "Lote de 10 x 30 en Lomas del Mirador. Excelente acceso a una cuadra de Gral Paz y 3 de Mosconi y de Tonelero. FOT 2.25. FOS 0.6.",
@@ -399,11 +399,6 @@
                 "respuesta_esperada": ""
             },
             {
-                "contexto": "El lote 24 tiene 1.036 m2, con un frente de 23 metros en un área central del Barrio Pebble Beach de Pilar Golf. ¡Apto para construir inmediatamente! El precio publicado es para pago al contado. Ofrecemos finaciación: USD 49.000 como anticipo y 24 cuotas de USD 4.300. Te invitamos a recorrer el lugar y estamos a tu disposición para todo lo que quieras saber.",
-                "respuesta_predicha": "Pebble Beach de Pilar Golf",
-                "respuesta_esperada": "Barrio Pebble Beach de Pilar Golf"
-            },
-            {
                 "contexto": "Ubicados sobre la Calle De Luca entre calle Alsina y Av. San Martín (arteria principal de acceso). A sólo 350 metros de la Ruta Provincial N° 6. Localidad de Los Cardales, Partido de Exaltación de la Cruz, Provincia de Buenos Aires. Características: Se trata de dos terrenos ubicados en el casco urbano de Los Cardales. Se encuentran dentro de la Zona Residencial Comercial de Densidad Media Baja (RCmb) acorde al Código de Planeamiento de Exaltación de la Cruz en la cuál se admite la edificación de departamentos y locales comerciales. Con indicadores de ocupación de: FOS: O.6 y FOT: 1.",
                 "respuesta_predicha": "Los Cardales",
                 "respuesta_esperada": ""
@@ -419,34 +414,14 @@
                 "respuesta_esperada": "Los Pasos 2 barrios del Jockey"
             },
             {
-                "contexto": "Excelente lote central en Barrio San Joaquín, rodeado de añosa arboleda, en un barrio totalmente consolidado. Escrituración inmediata. Inmejorable acceso sobre Ruta 39 a 2.000 m de la Ruta Panamericana y a 10 minutos del centro de Pilar. Amplio jardín con piscina.",
-                "respuesta_predicha": "San Joaquín",
-                "respuesta_esperada": "Barrio San Joaquín"
-            },
-            {
-                "contexto": "Hermoso lote interno de 625 mts de largo y 200 mts de ancho en Barrio cerrado San Simón. Muy buena ubicación dentro del barrio. VALOR DE VENTA USD 39.000",
-                "respuesta_predicha": "San Simón",
-                "respuesta_esperada": "Barrio San Simón"
-            },
-            {
                 "contexto": "Lote ubicado en barrio Parque Bristol en calle Las Heras esquina Falucho. Las medidas del mismo son de 20 x 11. Se encuentra a unas 12 cuadras del mar. FOS 0.60. FOT 0.60. UNIFAMILIAR. Expensas: 0",
                 "respuesta_predicha": "Parque Bristol",
                 "respuesta_esperada": ""
             },
             {
-                "contexto": "Te presentamos un hermoso chalet de 3 ambientes con gran parque, ubicado en La Primavera entre Zeballos y Godoy Cruz, en el barrio Las Dalias, próximo a Parque Camet. Esta propiedad posee un amplio y muy cómodo living con hogar y entrepiso con playroom con vista hacia el living. La cocina comedor se encuentra mediante barra desayunadora, cuenta con doble ventana que le otorga mucha luminosidad, mesada en L y espacio para lavarropas. Los dos dormitorios tienen amplios placares con bauleras. El baño es completo, con ducha y revestimientos cerámicos. Además, cuenta con un gran parque en el cual dispone de un quincho semicubierto, pileta y entrada pasante para autos. El chalet posee todos los servicios y se encuentra en buen estado general. Tiene paredón perimetral. El lote tiene 15 metros de frente por 26 metros de fondo, con una superficie total de 390 m2.",
-                "respuesta_predicha": "Las Dalias",
-                "respuesta_esperada": "Barrio Las Dalias"
-            },
-            {
                 "contexto": "CASA 4 AMB SUITE. PILETA + DEPTO 3 AMB BELGRANO R. Amplio living comedor con salida al patio. Patio con parrilla, piscina y lavadero. Cocina. Toilette de recepción. Cochera para un auto. Hall de distribución. Amplio dormitorio con baño en suite y vista al patio. Dos dormitorios con placard y acceso a balcón al frente. Baño completo. Antiguedad: aprox 50 años. Cochera para 1 auto. Termotanque. Horno y anafe a gas. Instalación para aire acondicionado. Calefacción por estufas de tiro balanceado. Pisos, baños e instalación eléctrica reciclados hace 7 años. Parrilla. Piscina. SUPERFICIE. Cubierta: 301 m2. Frente: 8.66 m. Fondo: 43.30 m. Sup. Terreno: 374.97 m2. GASTOS: ABL: $15.248. UBICACION: Holmberg al 1600 entre Virrey del Pino y Carbajal. En el barrio de Villa Ortúzar, con proximidad a numerosos comercios y cercanía a Av. de los Incas y Av. álvarez Thomas",
                 "respuesta_predicha": "Villa Ortúzar",
                 "respuesta_esperada": "Belgrano R"
-            },
-            {
-                "contexto": "Espectacular casa quinta en Barrio El Rodeo en La Plata. Acceso sobre ruta 215. muy buen entorno barrio familiar semi cerrado. la propiedad esta desarrolada sobre 4 lotes de 20 x 50 cada uno. la casa esta situada sobre dos lotes es de tipo chalet en una planta y consta de gran estar comedor con vista hacia la piscina",
-                "respuesta_predicha": "El Rodeo",
-                "respuesta_esperada": "Barrio El Rodeo"
             },
             {
                 "contexto": "CASA SUCRE. BELGRANO R. Casa sobre lote propio de doble frente (17.35 x 35) con balcones terraza, jardín, piscina, solárium y quincho con parrilla",
@@ -469,19 +444,9 @@
                 "respuesta_esperada": ""
             },
             {
-                "contexto": "Terreno en el barrio Altos del Mar en San Clemente del Tuyú. En calle 8 esquina calle 104 con frente al Barrio Playa Grande. Lote a 400 mts de la playa. Medidas 20 x 20 mts. El terreno tiene pilar de la luz. Tiene escritura, por lo que se escritura inmediatamente a su nombre. Lo reserva con 750 dólares, al firmar el boleto abona 4.500 dólares y al firmar la escritura abona 10.500 dólares.",
-                "respuesta_predicha": "Altos del Mar",
-                "respuesta_esperada": "Barrio Altos del Mar"
-            },
-            {
                 "contexto": "Vendo en Villa Carlos Paz, Villa Ernestina, lote en esquina. Zona residencial. Ubicado frente al complejo de cabañas Coty Ranch de Villa Ernestina. Las casas que se encuentran alrededor son de buena arquitectura. Está ubicado a 300 mts de un tranquilo río con generosas playas de arena y grandes rocas redondeadas. Se puede apreciar en las fotos. El lote en venta es el 135 (ver plano) en esquina. 37.69 mts de frente hacia el norte y 23 mts hacia el este. Valor del lote U$S 17.000.",
                 "respuesta_predicha": "Villa Ernestina",
                 "respuesta_esperada": ""
-            },
-            {
-                "contexto": "Casa en venta en la zona sur de la ciudad. Ubicación: Jose Maria Eguiluz n° 663. Barrio San Fernando. La casa se posee un terreno amplio de 413 m2, y tiene acceso por 2 calles, por adelante con calle Jose Maria Eguiluz y por atras con calle Jose Amenabar. Ideal proyecto e inversión",
-                "respuesta_predicha": "San Fernando",
-                "respuesta_esperada": "Barrio San Fernando"
             },
             {
                 "contexto": "Terreno en venta ubicado sobre calle 487 entre 133 y 134 (Joaquín Gorina, La Plata, Buenos Aires). Con disposición frente y orientación norte. De medidas regulares, cuenta con una superficie total aproximada de 319 m2. Acceso por calle de tierra mejorada con los servicios de electricidad, agua, gas natural y cable disponibles en la zona.",

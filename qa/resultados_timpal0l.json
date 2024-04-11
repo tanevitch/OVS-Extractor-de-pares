@@ -327,12 +327,12 @@
             {
                 "contexto": "Venta de Lote en Barrio Hipódromo, La Plata. Lote sobre Avenida 38 de 328 m2 superficie, el mismo posee zonificación U/C3 (AREA URBANA/ Áreas de promoción y Corredores de Acceso Principal y Complementaria) apto para desarrollo constructivos o comerciales ya que se permiten construir hasta 6 Niveles (Fos 0.6/ Fot Res. 2; Fot Com. 2.4. Den Res. 800; Den Com. 1.600/ Premios 30% en FOT y DEN.), el mismo cuenta con una casa de 3 dormitorios, cocina comedor, baño y garage, la misma se encuentra a reciclar o demoler. Morfología irregular, medidas 7.54 x 39.82 x 9.43 mts.",
                 "respuesta_predicha": "",
-                "respuesta_esperada": "FOT residencial: 2. FOT comercial: 2.4"
+                "respuesta_esperada": "FOT comercial: 2.4 FOT residencial: 2"
             },
             {
                 "contexto": "Excelente propiedad sobre esquina con un frente lineal de 162 metros y salida a tres calles, Cabildo, Guatemala y Pilcomayo. Superficie de terreno 6200 m2. Contrapiso para camiones en casi su totalidad. Sectores descubiertos a reciclar. Zona industrial. Apto todo destino. FOT residencial: 2, FOT industrial: 1.5, FOS: 60% max.",
                 "respuesta_predicha": "",
-                "respuesta_esperada": "FOT residencial: 2. FOT industrial: 1.5"
+                "respuesta_esperada": "FOT industrial: 1.5 FOT residencial: 2"
             },
             {
                 "contexto": "Ubicado en una esquina muy importante de Villa Ballester. Con acceso a varias líneas de colectivos. Frente 22 m, lateral 19.33 m y superficie de 422 m2. Cantidad de pisos a construir PB más 3 pisos. Estudio de factibilidad disponible. fot 3 + 30% en premios. Se escuchan ofertas. Se vende ya!",
@@ -362,7 +362,7 @@
             {
                 "contexto": "Imponente lote de 1038 m2 en esquina sobre la Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
                 "respuesta_predicha": "2.5",
-                "respuesta_esperada": "FOT residencial: 2.5. FOT comercial: 3"
+                "respuesta_esperada": "FOT comercial: 3 FOT residencial: 2.5"
             },
             {
                 "contexto": "Hermoso chalet sobre lote propio de 10 x 30 ubicado en Ituzaingó Norte (super residencial) a solo 5 cuadras de la estación (FOT: 2 FOS: 0.6). Cuenta con jardín al frente parquizado. Garage cubierto para un vehículo, pasante con portón automático. Gran living comedor en desnivel con hogar a (gas). Cocina comedor instalada con barra desayunadora, mueble bajo mesada y alacena, lavadero incorporado. Baño completo. En primer piso tres dormitorios y baño amplio compartimentado con bañera. Al fondo gran parque libre con pileta de natación y parrilla. Puede tomar departamento en menor valor.",
@@ -377,7 +377,7 @@
             {
                 "contexto": "Terreno regular entre medianeras en venta ubicado en calle 13 C e/ 471 y 472. Localidad City Bell con acceso por calle asfaltada. Servicios de electricidad, gas natural y agua corriente. El terreno cuenta con una construcción que posee tres dormitorios con piso flotante y placares empotrados, baño completo, cocina separada con muebles sobre y bajo mesada, living comedor con hogar a leña, lavadero cubierto, cochera cubierta para un auto y descubierta para otro, jardín parquizado con pileta y parrilla. Terreno de 10 x 40 mts. 400 mts 2 totales. 130 mts 2 cubiertos. Apto crédito bancario. Zona : U/R4. Cascos Urbanos del Eje Noroeste (Ex UR 5). Corresponde a sectores urbanos consolidados. Se promueve su ocupacion con la asignacion de valores mayores de densidad respecto a otras zonas del eje Noroeste. FOS 0.5. Altura referencia en niveles: 3. FOT comercial 0.8. FOT residencial 0.8. Densidad comercial 200, Densidad residencial 200",
                 "respuesta_predicha": "0.8",
-                "respuesta_esperada": "FOT comercial 0.8. FOT residencial 0.8"
+                "respuesta_esperada": "FOT comercial 0.8 FOT residencial 0.8"
             },
             {
                 "contexto": "Venta de lote en Flores, Capital Federal. GRAN PROYECTO INMOBILIARIO POSIBLE. Frente 8.66 x fondo 38.1 m2 en Flores CABA. USAA (C3II). Sobre Avenida Directorio esquina Avenida San Pedrito. Gran flujo vehicular y peatonal",
@@ -392,7 +392,7 @@
             {
                 "contexto": "Lote en venta en esquina. Puede tomar metros construidos. Medidas sobre calle 17: 18.38. Ochava de 3 mts. Sobre calle 38: 5.85. Cierra el polÍgono de forma irregular (ver foto). Existe un local a demoler. Zona: u/c2b. Fos 0.6. Altura referencia en niveles 8. Fot comercial 2.7 Fot residencial 2.25. densidad comercial 1800. Densidad residencial 900. Premios 50% en fot y densidad",
                 "respuesta_predicha": "",
-                "respuesta_esperada": "FOT comercial 2.7. FOT residencial 2.25"
+                "respuesta_esperada": "FOT comercial 2.7 FOT residencial 2.25"
             }
         ]
     },
@@ -820,13 +820,13 @@
         ]
     },
     "barrio": {
-        "tp": 10,
-        "fp": 13,
+        "tp": 12,
+        "fp": 11,
         "fn": 14,
         "tn": 63,
-        "p": 0.43478260869565216,
-        "r": 0.4166666666666667,
-        "f1": 0.425531914893617,
+        "p": 0.5217391304347826,
+        "r": 0.46153846153846156,
+        "f1": 0.4897959183673469,
         "error": [
             {
                 "contexto": "Lote de 10 x 30 en Lomas del Mirador. Excelente acceso a una cuadra de Gral Paz y 3 de Mosconi y de Tonelero. FOT 2.25. FOS 0.6.",
@@ -879,11 +879,6 @@
                 "respuesta_esperada": "Barrio San Joaquín"
             },
             {
-                "contexto": "Hermoso lote interno de 625 mts de largo y 200 mts de ancho en Barrio cerrado San Simón. Muy buena ubicación dentro del barrio. VALOR DE VENTA USD 39.000",
-                "respuesta_predicha": "San Simón",
-                "respuesta_esperada": "Barrio San Simón"
-            },
-            {
                 "contexto": "Lote ubicado en barrio Parque Bristol en calle Las Heras esquina Falucho. Las medidas del mismo son de 20 x 11. Se encuentra a unas 12 cuadras del mar. FOS 0.60. FOT 0.60. UNIFAMILIAR. Expensas: 0",
                 "respuesta_predicha": "Parque Bristol",
                 "respuesta_esperada": ""
@@ -927,11 +922,6 @@
                 "contexto": "Av. Caseros esq. Lomas de Zamora, Don Bosco. Barrio Nuevo Quilmes. Bienvenido a esta impresionante casa de 7 ambientes, una joya ubicada en el codiciado Barrio Nuevo Quilmes. Este oasis se ubica en una esquina, sobre un lote espacioso de 788 m2, con amplio espacio de estacionamiento. La misma consta de dos plantas sobre un lote de 788 m2 con espacio guardacoche para varios autos. Construida sobre platea con losa estructural. Doble muro. La casa esta compuesta por un hall de recepción, amplio living-comedor con hogar a leña y vista al parque, cocina con isla central, cinco dormitorios (el principal con vestidor, baño en suite con jacuzzi y terraza), toilette, lavadero con entrada independiente, 5 baños (2 completos), amplio quincho con parrilla, cuarto de guardado, hall de entrada en el primer piso y kitchenette. Cuenta con jardín con piscina climatizada con playa húmeda e hidromasaje. Además, la casa cuenta con un sexto dormitorio de servicio con un baño completo.",
                 "respuesta_predicha": "",
                 "respuesta_esperada": "Barrio Nuevo Quilmes"
-            },
-            {
-                "contexto": "Terreno en el barrio Altos del Mar en San Clemente del Tuyú. En calle 8 esquina calle 104 con frente al Barrio Playa Grande. Lote a 400 mts de la playa. Medidas 20 x 20 mts. El terreno tiene pilar de la luz. Tiene escritura, por lo que se escritura inmediatamente a su nombre. Lo reserva con 750 dólares, al firmar el boleto abona 4.500 dólares y al firmar la escritura abona 10.500 dólares.",
-                "respuesta_predicha": "Altos del Mar",
-                "respuesta_esperada": "Barrio Altos del Mar"
             },
             {
                 "contexto": "Lote de terreno irregular en excelente ubicación. 2° Rivadavia esquina Navarro. Castelar Norte. Medidas: lote irregular: 18 x 24. Superficie total: 353.89 m2. Valor: U$s 150.000.",

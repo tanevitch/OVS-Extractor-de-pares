@@ -292,12 +292,12 @@
             {
                 "contexto": "Venta de Lote en Barrio Hipódromo, La Plata. Lote sobre Avenida 38 de 328 m2 superficie, el mismo posee zonificación U/C3 (AREA URBANA/ Áreas de promoción y Corredores de Acceso Principal y Complementaria) apto para desarrollo constructivos o comerciales ya que se permiten construir hasta 6 Niveles (Fos 0.6/ Fot Res. 2; Fot Com. 2.4. Den Res. 800; Den Com. 1.600/ Premios 30% en FOT y DEN.), el mismo cuenta con una casa de 3 dormitorios, cocina comedor, baño y garage, la misma se encuentra a reciclar o demoler. Morfología irregular, medidas 7.54 x 39.82 x 9.43 mts.",
                 "respuesta_predicha": "",
-                "respuesta_esperada": "FOT residencial: 2. FOT comercial: 2.4"
+                "respuesta_esperada": "FOT comercial: 2.4 FOT residencial: 2"
             },
             {
                 "contexto": "Excelente propiedad sobre esquina con un frente lineal de 162 metros y salida a tres calles, Cabildo, Guatemala y Pilcomayo. Superficie de terreno 6200 m2. Contrapiso para camiones en casi su totalidad. Sectores descubiertos a reciclar. Zona industrial. Apto todo destino. FOT residencial: 2, FOT industrial: 1.5, FOS: 60% max.",
                 "respuesta_predicha": "",
-                "respuesta_esperada": "FOT residencial: 2. FOT industrial: 1.5"
+                "respuesta_esperada": "FOT industrial: 1.5 FOT residencial: 2"
             },
             {
                 "contexto": "Ubicado en una esquina muy importante de Villa Ballester. Con acceso a varias líneas de colectivos. Frente 22 m, lateral 19.33 m y superficie de 422 m2. Cantidad de pisos a construir PB más 3 pisos. Estudio de factibilidad disponible. fot 3 + 30% en premios. Se escuchan ofertas. Se vende ya!",
@@ -327,7 +327,7 @@
             {
                 "contexto": "Imponente lote de 1038 m2 en esquina sobre la Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
                 "respuesta_predicha": "2.5",
-                "respuesta_esperada": "FOT residencial: 2.5. FOT comercial: 3"
+                "respuesta_esperada": "FOT comercial: 3 FOT residencial: 2.5"
             },
             {
                 "contexto": "Lote con una superficie total de 248 mts. MEDIDAS: 8.67 mts de frente 8.66 mts al contrafrente 28.50 mts al nord oeste 27.97 mts al nord este. Zonificacion R3. FOT 1.2. UBCACION: La propiedad se encuentra ubicada sobre la calle Islas Malvinas n° 1061 entre Urquiza y Azcuénaga, a 1 cuadra de Carlos Pellegrini, 3 cuadras de Andrés Baranda y solo 10 cuadras de la estación de tren de Quilmes.",
@@ -337,7 +337,7 @@
             {
                 "contexto": "Terreno regular entre medianeras en venta ubicado en calle 13 C e/ 471 y 472. Localidad City Bell con acceso por calle asfaltada. Servicios de electricidad, gas natural y agua corriente. El terreno cuenta con una construcción que posee tres dormitorios con piso flotante y placares empotrados, baño completo, cocina separada con muebles sobre y bajo mesada, living comedor con hogar a leña, lavadero cubierto, cochera cubierta para un auto y descubierta para otro, jardín parquizado con pileta y parrilla. Terreno de 10 x 40 mts. 400 mts 2 totales. 130 mts 2 cubiertos. Apto crédito bancario. Zona : U/R4. Cascos Urbanos del Eje Noroeste (Ex UR 5). Corresponde a sectores urbanos consolidados. Se promueve su ocupacion con la asignacion de valores mayores de densidad respecto a otras zonas del eje Noroeste. FOS 0.5. Altura referencia en niveles: 3. FOT comercial 0.8. FOT residencial 0.8. Densidad comercial 200, Densidad residencial 200",
                 "respuesta_predicha": "0.8",
-                "respuesta_esperada": "FOT comercial 0.8. FOT residencial 0.8"
+                "respuesta_esperada": "FOT comercial 0.8 FOT residencial 0.8"
             },
             {
                 "contexto": "Venta de lote en Flores, Capital Federal. GRAN PROYECTO INMOBILIARIO POSIBLE. Frente 8.66 x fondo 38.1 m2 en Flores CABA. USAA (C3II). Sobre Avenida Directorio esquina Avenida San Pedrito. Gran flujo vehicular y peatonal",
@@ -352,7 +352,7 @@
             {
                 "contexto": "Lote en venta en esquina. Puede tomar metros construidos. Medidas sobre calle 17: 18.38. Ochava de 3 mts. Sobre calle 38: 5.85. Cierra el polÍgono de forma irregular (ver foto). Existe un local a demoler. Zona: u/c2b. Fos 0.6. Altura referencia en niveles 8. Fot comercial 2.7 Fot residencial 2.25. densidad comercial 1800. Densidad residencial 900. Premios 50% en fot y densidad",
                 "respuesta_predicha": "",
-                "respuesta_esperada": "FOT comercial 2.7. FOT residencial 2.25"
+                "respuesta_esperada": "FOT comercial 2.7 FOT residencial 2.25"
             }
         ]
     },
@@ -843,11 +843,11 @@
     "frentes": {
         "tp": 14,
         "fp": 5,
-        "fn": 5,
-        "tn": 76,
+        "fn": 6,
+        "tn": 75,
         "p": 0.7368421052631579,
-        "r": 0.7368421052631579,
-        "f1": 0.7368421052631579,
+        "r": 0.7,
+        "f1": 0.717948717948718,
         "error": [
             {
                 "contexto": "Excelente propiedad sobre esquina con un frente lineal de 162 metros y salida a tres calles, Cabildo, Guatemala y Pilcomayo. Superficie de terreno 6200 m2. Contrapiso para camiones en casi su totalidad. Sectores descubiertos a reciclar. Zona industrial. Apto todo destino. FOT residencial: 2, FOT industrial: 1.5, FOS: 60% max.",
@@ -876,6 +876,11 @@
             },
             {
                 "contexto": "Ecopueblo Alvear. Único lote disponible con salida a dos calles. Manzana 18 Lote 506. Lote irregular de 315.40 m2. Cuenta con un frente al norte de 10 mts, 34.76 mts en su lado este, 11.89 en su lado sur, y 28.32 en su lado oeste.",
+                "respuesta_predicha": "",
+                "respuesta_esperada": 2.0
+            },
+            {
+                "contexto": "Partido de San Fernando PBA. Terreno en forma de L con su frente principal sobre la avenida y un segundo frente sobre la calle lateral Don Orione. Frente: 19.66 m, lateral derecho: 46.90 m, lateral izquierdo: 46.95 m, fondo: 26.20 m. Zonificacion: C2. Superficie: 2000 m2. F.O.T: 3. F.O.S: 0.6. Densidad: 900 Hab./Ha. Ret. Frente: No hay",
                 "respuesta_predicha": "",
                 "respuesta_esperada": 2.0
             },

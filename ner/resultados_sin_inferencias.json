@@ -189,19 +189,14 @@
     "irregular": {
         "tp": 15,
         "fp": 0,
-        "fn": 16,
-        "tn": 69,
+        "fn": 8,
+        "tn": 77,
         "p": 1.0,
-        "r": 0.4838709677419355,
-        "f1": 0.6521739130434783,
+        "r": 0.6521739130434783,
+        "f1": 0.7894736842105263,
         "error": [
             {
                 "contexto": "Venta de Lote en Barrio Hipódromo, La Plata. Lote sobre Avenida 38 de 328 m2 superficie, el mismo posee zonificación U/C3 (AREA URBANA/ Áreas de promoción y Corredores de Acceso Principal y Complementaria) apto para desarrollo constructivos o comerciales ya que se permiten construir hasta 6 Niveles (Fos 0.6/ Fot Res. 2; Fot Com. 2.4. Den Res. 800; Den Com. 1.600/ Premios 30% en FOT y DEN.), el mismo cuenta con una casa de 3 dormitorios, cocina comedor, baño y garage, la misma se encuentra a reciclar o demoler. Morfología irregular, medidas 7.54 x 39.82 x 9.43 mts.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": true
-            },
-            {
-                "contexto": "Se trata de un galpón de tres frentes, ubicado sobre Av. De los Quilmes N° 1540/1550 a escasos metros del triangulo de Bernal, en zonificación R3 (permitiendo industrias de actividad inocua) de excelente acceso y de salida rápida a autopista Buenos Aires la Plata,diferentes puntos del conurbano como así también a Capital Federal. Galpón N° 1540: Implantado sobre dos lotes de terreno. En su primera mitad de 14.80 mts x 50 mts x 25.70 mts. Sup. Cubierta: 380.3.",
                 "respuesta_predicha": "",
                 "respuesta_esperada": true
             },
@@ -211,37 +206,7 @@
                 "respuesta_esperada": true
             },
             {
-                "contexto": "Lote con mejoras (casa a refaccionar) 8.77 x 26.23 x 8.77 x 26.07, sup. total 226 mts2. Todos los servicios. FOS 0.6. FOT 1.6. Zonificación RTMA. Escritura a cargo del comprador.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": true
-            },
-            {
-                "contexto": "Excelente lote de 586 m2, sobre calle 117 entre 526 y 527. Ideal Inversores constructores, muy baja incidencia. Ancho 10 metros x 60 en su parte mas larga y 55.50 en la parte mas corta. FOS 0.6 FOT 0.8. Densidad x Ha 300. Zona UR2. Permitido 10 UF. Escritura inmediata. Proyecto de 10 UF+cocheras",
-                "respuesta_predicha": "",
-                "respuesta_esperada": true
-            },
-            {
-                "contexto": "Lote con una superficie total de 248 mts. MEDIDAS: 8.67 mts de frente 8.66 mts al contrafrente 28.50 mts al nord oeste 27.97 mts al nord este. Zonificacion R3. FOT 1.2. UBCACION: La propiedad se encuentra ubicada sobre la calle Islas Malvinas n° 1061 entre Urquiza y Azcuénaga, a 1 cuadra de Carlos Pellegrini, 3 cuadras de Andrés Baranda y solo 10 cuadras de la estación de tren de Quilmes.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": true
-            },
-            {
                 "contexto": "Terreno irregular 12.90 x 23.20 x 17.05 x 28.90. Superficie total 792.02 m2",
-                "respuesta_predicha": "",
-                "respuesta_esperada": true
-            },
-            {
-                "contexto": "Casa de lote propio en esquina con terraza con parrilla. 5 ambientes en Flores. Por escritura figura la medida del terreno de 94 metros cuadrados. 4 metros de frente al NE. 8.27 metros en su otro frente al SE. 6 metros en su ochava al O. 8.45 metros en el costado SE. 12.30 metros en su costado NE. Ubicado en el barrio de Flores. A media cuadra de Av. Esteban Bonorino. A dos cuadras de Av. Carabobo.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": true
-            },
-            {
-                "contexto": "Venta lote en excelente ubicación, con construcción prácticamente para demoler. Soler al 700 Bahía Blanca. Ideal Desarrolladores. 8.66 mts de frente, 23 mts lado oeste, 19.60 mts lado este. Zonificación C2. FOT 2.4",
-                "respuesta_predicha": "",
-                "respuesta_esperada": true
-            },
-            {
-                "contexto": "Sobre Ruta 58 km 16 en Barrio San Lucas. En venta esté hermoso lote de 1112 m2 de los más grandes del barrio. Medidas exactas: Frente 43 mts. Lado izquierdo 40 mts. Lado derecho 49 mts y fondo de 15 mts.",
                 "respuesta_predicha": "",
                 "respuesta_esperada": true
             },
@@ -252,11 +217,6 @@
             },
             {
                 "contexto": "Partido de San Fernando PBA. Terreno en forma de L con su frente principal sobre la avenida y un segundo frente sobre la calle lateral Don Orione. Frente: 19.66 m, lateral derecho: 46.90 m, lateral izquierdo: 46.95 m, fondo: 26.20 m. Zonificacion: C2. Superficie: 2000 m2. F.O.T: 3. F.O.S: 0.6. Densidad: 900 Hab./Ha. Ret. Frente: No hay",
-                "respuesta_predicha": "",
-                "respuesta_esperada": true
-            },
-            {
-                "contexto": "Frente triple a Rocha de 28.39 mts con fondo de 34.77 mts. Frente a Mazza de 12.31 mts con fondo de 50.50 mts. UF 1 en PH 3B: 584 mts. UF 2 en lote propio 366 mts. UF 3 en lote propio 674 mts. Sumatoria mts de tierra 1624 mts. Zonificación: Ex R6 con FOT 2.4 y FOS 0.6.",
                 "respuesta_predicha": "",
                 "respuesta_esperada": true
             },
@@ -578,41 +538,16 @@
     "frentes": {
         "tp": 8,
         "fp": 1,
-        "fn": 32,
-        "tn": 59,
+        "fn": 13,
+        "tn": 78,
         "p": 0.8888888888888888,
-        "r": 0.2,
-        "f1": 0.326530612244898,
+        "r": 0.38095238095238093,
+        "f1": 0.5333333333333333,
         "error": [
-            {
-                "contexto": "Galpón en esquina, con muy buen acceso a Panamericana y Ruta 202 (a solo 600 metros). Zonificación: área industrial I2. Características:. Altura 6 metros sin columnas. Portón: 4.80 mts. alto y 4.50 mts. ancho. Lote: 10 x 30. Cubiertos: 190 m2. Fuerza motriz. FOS 0.60. FOT 1.20.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
             {
                 "contexto": "Excelente propiedad sobre esquina con un frente lineal de 162 metros y salida a tres calles, Cabildo, Guatemala y Pilcomayo. Superficie de terreno 6200 m2. Contrapiso para camiones en casi su totalidad. Sectores descubiertos a reciclar. Zona industrial. Apto todo destino. FOT residencial: 2, FOT industrial: 1.5, FOS: 60% max.",
                 "respuesta_predicha": "",
                 "respuesta_esperada": 3.0
-            },
-            {
-                "contexto": "Ubicado en una esquina muy importante de Villa Ballester. Con acceso a varias líneas de colectivos. Frente 22 m, lateral 19.33 m y superficie de 422 m2. Cantidad de pisos a construir PB más 3 pisos. Estudio de factibilidad disponible. fot 3 + 30% en premios. Se escuchan ofertas. Se vende ya!",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "lote en esquina, 10 mts x 35 mts + martillo. 224 m2, fot 3 mas premios, fos 0.6",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Importante lote ubicado en excelente esquina de La Plata, con un superficie total de 1975 m2, con medidas de 32.91 m2 sobre calle 19 y 60.00 sobre calle 36. Zonificación UC/3, con un FOT de 5135 m2. El lote posee un total de 450 m2 edificados.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Imponente lote de 1038 m2 en esquina sobre la Av Gral. Guemes esquina Gral. Arredondo frente al Shopping Alto Avellaneda con 29 mts de frente sobre la Avenida Guemes x 29 mts sobre Arredondo. Son 4 lotes. Ubicado a 3 cuadras del CBC UBA (Sede Avellaneda). Ideal emprendimiento multifamiliar con zocalo comercial y cocheras. Parcela 01: 244.1 m2. Parcela 02: 226.0 m2. Parcela 24: 320.0 m2. Parcela 25: 248.6 m2. EDIFICABILIDAD: Fos máx.: 60% FOT residencial: 2.5 FOT comercial: 3",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
             },
             {
                 "contexto": "Ideal para desarrollo Inmobiliario!! Ubicado en zona céntrica con amplio crecimiento de emprendimientos en altura; a 2 cuadras de la Av. Rivadavia; de la Plaza San Martín y de la Estación Ituzaingó del Tren Sarmiento. Superficie Total del Terreno: 450 m2. Con doble frente de 17.32 mts y 26 mts de fondo (Conformado por dos lotes de 8.66 x 26). Actualmente con vivienda construída en una planta (más una habitación con baño en 1er piso) de 250 m2 cubiertos. Fondo Libre. FOT 3. FOS 0.6. POSIBILIDAD DE INCORPORAR LOTE ADJUNTO A LA OPERACION",
@@ -620,34 +555,9 @@
                 "respuesta_esperada": 2.0
             },
             {
-                "contexto": "Lote en esquina entre las calles Moreno y Avellaneda. Superficie terreno 210 metros. Zonificacion Rma1. FOT 1.5. FOS 0.6. Posee una construccion de un antiguo local de 220 mts",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Diagonal 80 esquina 115. Lote a la venta sobre una de las arterias principales de la ciudad de La Plata. El mismo posee una superficie total de 722 m2 y se encuentra ubicado sobre una esquina.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Lote en Los Pasos 2 barrios del Jockey. Lote 05 en manzana E de 800 m2, ubicado en esquina, 20 x 40 mts. Los Pasos, Barrios cerrados del Jockey cuentan con accesos rápidos. Los mismos se encuentran ubicados en Fisherton dentro de la ciudad de Rosario y con acceso mediante puentes al Jockey Club. Ubicación preferencial cerca de la Autopista Rosario-Córdoba, Calle Mendoza y Calle Urquiza. Cercano al del aeropuerto, al centro comercial de Fisherton Mall y a Funes.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Lote ubicado en barrio Parque Bristol en calle Las Heras esquina Falucho. Las medidas del mismo son de 20 x 11. Se encuentra a unas 12 cuadras del mar. FOS 0.60. FOT 0.60. UNIFAMILIAR. Expensas: 0",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
                 "contexto": "Te presentamos un hermoso chalet de 3 ambientes con gran parque, ubicado en La Primavera entre Zeballos y Godoy Cruz, en el barrio Las Dalias, próximo a Parque Camet. Esta propiedad posee un amplio y muy cómodo living con hogar y entrepiso con playroom con vista hacia el living. La cocina comedor se encuentra mediante barra desayunadora, cuenta con doble ventana que le otorga mucha luminosidad, mesada en L y espacio para lavarropas. Los dos dormitorios tienen amplios placares con bauleras. El baño es completo, con ducha y revestimientos cerámicos. Además, cuenta con un gran parque en el cual dispone de un quincho semicubierto, pileta y entrada pasante para autos. El chalet posee todos los servicios y se encuentra en buen estado general. Tiene paredón perimetral. El lote tiene 15 metros de frente por 26 metros de fondo, con una superficie total de 390 m2.",
                 "respuesta_predicha": 2.0,
                 "respuesta_esperada": ""
-            },
-            {
-                "contexto": "Casa de lote propio en esquina con terraza con parrilla. 5 ambientes en Flores. Por escritura figura la medida del terreno de 94 metros cuadrados. 4 metros de frente al NE. 8.27 metros en su otro frente al SE. 6 metros en su ochava al O. 8.45 metros en el costado SE. 12.30 metros en su costado NE. Ubicado en el barrio de Flores. A media cuadra de Av. Esteban Bonorino. A dos cuadras de Av. Carabobo.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
             },
             {
                 "contexto": "Casa de doble frente de 20.903 m2 de lote. Toma departamento en parte de pago. Zona Olivos/Vicente López. La misma cuenta con un living comedor de 5 x 9.50 con pisos en cerámicos, gran cocina comedor diario refaccionada a nueva de 6.30 x 6.70 con mucha luz y vista y salida al parque, lavadero independiente, dependencia de servicio con baño, toilette con ducha. Calefacción central por radiadores. Gran parque arbolado con piscina, quincho, parrilla y entrada pasante para varios autos.",
@@ -660,47 +570,12 @@
                 "respuesta_esperada": 2.0
             },
             {
-                "contexto": "1.200 m2 Panamericana Km 42, mano a Capital. Localidad de Del Viso, Partido de Pilar. Provincia de Buenos Aires. 1.200 m2. lote 70 m de frente. Forma triangular. En esquina",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Av. Caseros esq. Lomas de Zamora, Don Bosco. Barrio Nuevo Quilmes. Bienvenido a esta impresionante casa de 7 ambientes, una joya ubicada en el codiciado Barrio Nuevo Quilmes. Este oasis se ubica en una esquina, sobre un lote espacioso de 788 m2, con amplio espacio de estacionamiento. La misma consta de dos plantas sobre un lote de 788 m2 con espacio guardacoche para varios autos. Construida sobre platea con losa estructural. Doble muro. La casa esta compuesta por un hall de recepción, amplio living-comedor con hogar a leña y vista al parque, cocina con isla central, cinco dormitorios (el principal con vestidor, baño en suite con jacuzzi y terraza), toilette, lavadero con entrada independiente, 5 baños (2 completos), amplio quincho con parrilla, cuarto de guardado, hall de entrada en el primer piso y kitchenette. Cuenta con jardín con piscina climatizada con playa húmeda e hidromasaje. Además, la casa cuenta con un sexto dormitorio de servicio con un baño completo.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Venta de lote en Flores, Capital Federal. GRAN PROYECTO INMOBILIARIO POSIBLE. Frente 8.66 x fondo 38.1 m2 en Flores CABA. USAA (C3II). Sobre Avenida Directorio esquina Avenida San Pedrito. Gran flujo vehicular y peatonal",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Terreno en el barrio Altos del Mar en San Clemente del Tuyú. En calle 8 esquina calle 104 con frente al Barrio Playa Grande. Lote a 400 mts de la playa. Medidas 20 x 20 mts. El terreno tiene pilar de la luz. Tiene escritura, por lo que se escritura inmediatamente a su nombre. Lo reserva con 750 dólares, al firmar el boleto abona 4.500 dólares y al firmar la escritura abona 10.500 dólares.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Vendo en Villa Carlos Paz, Villa Ernestina, lote en esquina. Zona residencial. Ubicado frente al complejo de cabañas Coty Ranch de Villa Ernestina. Las casas que se encuentran alrededor son de buena arquitectura. Está ubicado a 300 mts de un tranquilo río con generosas playas de arena y grandes rocas redondeadas. Se puede apreciar en las fotos. El lote en venta es el 135 (ver plano) en esquina. 37.69 mts de frente hacia el norte y 23 mts hacia el este. Valor del lote U$S 17.000.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Lote de terreno irregular en excelente ubicación. 2° Rivadavia esquina Navarro. Castelar Norte. Medidas: lote irregular: 18 x 24. Superficie total: 353.89 m2. Valor: U$s 150.000.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
                 "contexto": "Casa en venta en la zona sur de la ciudad. Ubicación: Jose Maria Eguiluz n° 663. Barrio San Fernando. La casa se posee un terreno amplio de 413 m2, y tiene acceso por 2 calles, por adelante con calle Jose Maria Eguiluz y por atras con calle Jose Amenabar. Ideal proyecto e inversión",
                 "respuesta_predicha": "",
                 "respuesta_esperada": 2.0
             },
             {
                 "contexto": "Ecopueblo Alvear. Único lote disponible con salida a dos calles. Manzana 18 Lote 506. Lote irregular de 315.40 m2. Cuenta con un frente al norte de 10 mts, 34.76 mts en su lado este, 11.89 en su lado sur, y 28.32 en su lado oeste.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Terreno en venta ubicado sobre calle 49 y 25 (Villa Elisa, La Plata, Buenos Aires). Con disposición frente y orientación este. De medidas regulares y en condición de esquina, cuenta con 13 mts de frente por 33 mts, contabilizando una superficie total de 438 mts2. Dispone de una gran forestación. Acceso por calle de ripio y con los servicios de electricidad y agua corriente disponibles en el lugar.",
                 "respuesta_predicha": "",
                 "respuesta_esperada": 2.0
             },
@@ -736,16 +611,6 @@
             },
             {
                 "contexto": "Lote con salida a dos calles, ubicado en la calle Tejedor entre Av. José María Moreno y calle Beauchef con 17 metros de frente. Se encuentra a cuatro cuadras de Av. Pedro Goyena; dos de la Av. Directorio. Subte E y varias lineas de colectivos. Acceso a autopista. Superficie total: 1700 m2. Superficie construible: 5720 aproximadamente.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Este impresionante chalet revestido en piedra, de techo de tejas rojas, aberturas de madera artesanales, luminoso, espacioso y funcional, está ubicado a dos cuadras de Avenida Sarmiento, a dos cuadras de Avenida 3 de Febrero, a 7 cuadras del centro de la ciudad y a 10 cuadras del paseo costanero, en una zona apacible y pintoresca. Construido estratégicamente en esquina, permite ambientes luminosos, ventilados y muy bien distribuidos, permitiendo una total funcionalidad. Cuenta con 4 dormitorios, 3 baños, cocina con desayunador, comedor, amplia sala, lavadero, patio con parrilla, jardín y una pequeña pileta.",
-                "respuesta_predicha": "",
-                "respuesta_esperada": 2.0
-            },
-            {
-                "contexto": "Lote en venta en esquina. Puede tomar metros construidos. Medidas sobre calle 17: 18.38. Ochava de 3 mts. Sobre calle 38: 5.85. Cierra el polÍgono de forma irregular (ver foto). Existe un local a demoler. Zona: u/c2b. Fos 0.6. Altura referencia en niveles 8. Fot comercial 2.7 Fot residencial 2.25. densidad comercial 1800. Densidad residencial 900. Premios 50% en fot y densidad",
                 "respuesta_predicha": "",
                 "respuesta_esperada": 2.0
             }
