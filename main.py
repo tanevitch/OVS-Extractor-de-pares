@@ -6,7 +6,7 @@ from helper import descubrir_nuevos
 NLP = spacy.load("es_core_news_lg")
 
 gt = pd.read_csv('ground_truth_100.csv', sep = '|')
-rtas = pd.read_csv('qa/respuestas_rvargas93.csv', sep = '|')
+rtas = pd.read_csv('ner/respuestas.csv', sep = '|')
 
 gt = gt.fillna("")
 rtas = rtas.fillna("")
@@ -120,7 +120,10 @@ for rta, esperada in zip(rtas.itertuples(index=False), gt.itertuples(index=False
         metrica_valor_esperada = getattr(esperada, metrica)
         if (metrica_valor_rta == "" and metrica_valor_esperada==""):
             metricas[metrica]["tn"] += 1
-        else:      
+        else:   
+            if metrica == "fot":   
+                metrica_valor_esperada = " ".join(sorted(metrica_valor_esperada.split(". "))).strip()
+                metrica_valor_rta= " ".join(sorted(metrica_valor_rta.split(". "))).strip()
             if (NLP(str(metrica_valor_rta).lower()).similarity(NLP(str(metrica_valor_esperada).lower()))) == 1:
                 metricas[metrica]["tp"] += 1
             else:
@@ -161,5 +164,5 @@ for metrica, valores in metricas.items():
     metricas[metrica]["f1"] = f1_score
 
 import json
-with open('qa/resultados_rvargas93.json', 'w', encoding="utf8") as fp:
+with open('ner/resultados.json', 'w', encoding="utf8") as fp:
     json.dump(metricas, fp, ensure_ascii=False)
