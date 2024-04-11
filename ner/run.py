@@ -9,7 +9,7 @@ from helper import procesar_direccion, procesar_fot, procesar_frentes, procesar_
 
 nlp= spacy.load("output-merge/model-best")
 
-input = pd.read_csv('../ground_truth_100_sin_inferencias.csv', sep = '|')
+input = pd.read_csv('../ground_truth_100.csv', sep = '|')
 input = input.fillna("")
 data = []
 for index, row in input.iterrows():

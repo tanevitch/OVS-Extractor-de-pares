@@ -20,7 +20,7 @@ PREGUNTAS= [
 ]
 NLP = spacy.load("es_core_news_lg")
 
-input = pd.read_csv('ground_truth_100_sin_inferencias.csv', sep = '|')
+input = pd.read_csv('ground_truth_100.csv', sep = '|')
 input = input.fillna("")
 
 data= []

@@ -107,7 +107,7 @@ METRICAS = {
 MATCHER = Matcher()
 
 
-input = pd.read_csv('ground_truth_100_sin_inferencias.csv', sep = '|')
+input = pd.read_csv('ground_truth_100.csv', sep = '|')
 input = input.fillna("")
 data = []
 for index, row in input.iterrows():
