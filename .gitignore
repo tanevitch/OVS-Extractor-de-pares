@@ -1,0 +1,5 @@
+.env/
+.venv/
+ner/output-merge/
+*.pyc
+__pycache__/
