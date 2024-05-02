@@ -69,7 +69,7 @@ class Evaluation:
     def __str__(self) -> str:
         "Return the results as a string"
         metrics = [metric.dict() for metric in self.metrics]
-        return json.dumps(metrics, ensure_ascii=False, sort_keys=True, indent=4)
+        return json.dumps(metrics, ensure_ascii=False, indent=4)
 
     def __repr__(self) -> str:
         "Return the results as a string"
@@ -85,4 +85,4 @@ class Evaluation:
         "Save the results"
         metrics = [metric.dict() for metric in self.metrics]
         with open(path, "w", encoding="utf8") as f:
-            json.dump(metrics, f, ensure_ascii=False, sort_keys=True, indent=4)
+            json.dump(metrics, f, ensure_ascii=False, indent=4)
