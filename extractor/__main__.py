@@ -1,28 +1,23 @@
 "Run an AI model for QA, NER and RBM and compute the results"
 
 import argparse
+import warnings
+from pprint import pprint
+from typing import Callable
 
 import pandas as pd
-from src.helper import descubrir_nuevos
-from src.metrics import Evaluation
-from src.ner import ner
-from src.qa import qa
-from src.rbm import rbm
 
-INPUT_WITH_INFERENCES: str = "ground_truth_100.csv"
-INPUT_WITHOUT_INFERENCES: str = "ground_truth_100_sin_inferencias.csv"
+warnings.filterwarnings("ignore", message=r"\[W008\]", category=UserWarning)
+
+INPUT_WITH_INFERENCES: str = "input/ground_truth_100.csv"
+INPUT_WITHOUT_INFERENCES: str = "input/ground_truth_100_sin_inferencias.csv"
 
 
-def main():
-    args: argparse.Namespace = parse_args()
-    input: pd.DataFrame = process_input(args)
-
-    results: list[pd.DataFrame] = args.script(input)
-    results = [process_result(result, args) for result in results]
-    for result in results:
-        evaluation = Evaluation(input, result)
-        evaluation.evaluate()
-        print(evaluation)
+def save_dataframe_to_csv(data, output: str) -> pd.DataFrame:
+    df = pd.DataFrame(data, index=None)
+    df.set_index("descripcion", inplace=True)
+    df.to_csv(f"output/{output}", sep="|")
+    return df
 
 
 def process_input(args: argparse.Namespace) -> pd.DataFrame:
@@ -32,6 +27,8 @@ def process_input(args: argparse.Namespace) -> pd.DataFrame:
 
 
 def process_result(result: pd.DataFrame, args: argparse.Namespace) -> pd.DataFrame:
+    from src.helper import descubrir_nuevos
+
     if args.inferences:
         clean_result = result.apply(descubrir_nuevos, axis=1)
         assert type(clean_result) == pd.DataFrame
@@ -40,76 +37,76 @@ def process_result(result: pd.DataFrame, args: argparse.Namespace) -> pd.DataFra
 
 
 def run_qa(input: pd.DataFrame) -> list[pd.DataFrame]:
+    from src.qa import qa
 
-    params: list[dict] = [
-        {
-            "model": "rvargas93/distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
-            "output": "qa/respuestas_rvargas93.csv",
-        },
-        {
-            "model": "mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
-            "output": "qa/respuestas_mrm8488.csv",
-        },
-        {
-            "model": "timpal0l/mdeberta-v3-base-squad2",
-            "output": "qa/respuestas_timpal0l.csv",
-        },
+    models: list[str] = [
+        "rvargas93/distill-bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+        "mrm8488/bert-base-spanish-wwm-cased-finetuned-spa-squad2-es",
+        "timpal0l/mdeberta-v3-base-squad2",
     ]
 
-    return [qa(input, **param) for param in params]
+    results = [qa(input, model) for model in models]
+    for result, param in zip(results, models):
+        param = param.split("/")[0]
+        save_dataframe_to_csv(result, f"qa_{param}.csv")
+    return results
 
 
-def run_rbm(input: pd.DataFrame) -> list[pd.DataFrame]:
+def run_rbm(input: pd.DataFrame) -> pd.DataFrame:
+    from src.rbm import rbm
 
-    params: list[dict] = [
-        {
-            "output": "rbm/respuestas.csv",
-        }
-    ]
-
-    return [rbm(input, **param) for param in params]
+    results = rbm(input)
+    save_dataframe_to_csv(results, "rbm.csv")
+    return results
 
 
-def run_ner(input: pd.DataFrame) -> list[pd.DataFrame]:
+def run_ner(input: pd.DataFrame) -> pd.DataFrame:
+    from src.ner import ner
 
-    params: list[dict] = [
-        {
-            "output": "ner/respuestas.csv",
-        }
-    ]
-
-    return [ner(input, **param) for param in params]
+    results = ner(input)
+    save_dataframe_to_csv(results, "ner.csv")
+    return results
 
 
-def parse_args() -> argparse.Namespace:
+def parse_args(functions: list[str]) -> argparse.Namespace:
     parser: argparse.ArgumentParser = argparse.ArgumentParser(description=__doc__)
-    group = parser.add_mutually_exclusive_group(required=True)
-    group.add_argument(
-        "--qa",
-        action="store_const",
-        const={"script": run_qa},
-        help="Run QA model",
-    )
-    group.add_argument(
-        "--rbm",
-        action="store_const",
-        const={"script": run_rbm},
-        help="Run RBM model",
-    )
-    group.add_argument(
-        "--ner",
-        action="store_const",
-        const={"script": run_ner},
-        help="Run NER model",
-    )
 
+    parser.add_argument(
+        "-s",
+        "--strategy",
+        choices=functions,
+        required=True,
+        help="Select the strategy",
+    )
     parser.add_argument(
         "-i",
         "--inferences",
         action=argparse.BooleanOptionalAction,
+        default=False,
         help="Run with inferences",
     )
     return parser.parse_args()
+
+
+def main():
+    from src.metrics import Evaluation
+
+    functions: dict[str, Callable] = {
+        "qa": run_qa,
+        "rbm": run_rbm,
+        "ner": run_ner,
+    }
+
+    args: argparse.Namespace = parse_args(list(functions.keys()))
+    input: pd.DataFrame = process_input(args)
+
+    results = functions[args.strategy](input)
+    results = results if isinstance(results, list) else [results]
+    results = [process_result(result, args) for result in results]
+    for result in results:
+        evaluation = Evaluation(input, result)
+        evaluation.evaluate()
+        pprint(evaluation)
 
 
 if __name__ == "__main__":

@@ -23,7 +23,7 @@ PREGUNTAS = [
 ]
 
 
-def qa(input: pd.DataFrame, model: str, output: str) -> pd.DataFrame:
+def qa(input: pd.DataFrame, model: str) -> pd.DataFrame:
     NLP = spacy.load("es_core_news_lg")
     pipe = pipeline("question-answering", model=model, handle_impossible_answer=True)
 
@@ -73,8 +73,4 @@ def qa(input: pd.DataFrame, model: str, output: str) -> pd.DataFrame:
             }
         )
 
-    df = pd.DataFrame(data, index=None)
-    df.set_index("descripcion", inplace=True)
-    df.to_csv(output, sep="|")
-
-    return df
+    return pd.DataFrame(data, index=None)

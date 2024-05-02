@@ -9,7 +9,7 @@ from src.helper import (
 )
 
 
-def ner(input: pd.DataFrame, output: str):
+def ner(input: pd.DataFrame):
     NLP = spacy.load("output-merge/model-best")
 
     data = []
@@ -74,7 +74,4 @@ def ner(input: pd.DataFrame, output: str):
             }
         )
 
-    df = pd.DataFrame(data, index=None)
-    df.set_index("descripcion", inplace=True)
-    df.to_csv(output, sep="|")
-    return df
+    return pd.DataFrame(data, index=None)

@@ -1,10 +1,10 @@
 import json
+from collections import namedtuple
 
 import pandas as pd
 import spacy
+
 from .metric import Metric
-
-
 
 NLP = spacy.load("es_core_news_lg")
 
@@ -36,13 +36,16 @@ class Evaluation:
             Metric(name="frentes"),
             Metric(name="pileta"),
         ]
+        self.ResultTuple = namedtuple("ResultTuple", self.results.columns)
+        self.GTTuple = namedtuple("GTTuple", self.gt.columns)
 
     def evaluate(self) -> list[Metric]:
         "Evaluate the results"
-        for actual, expected in zip(
-            self.results.itertuples(index=False, name=None),
-            self.gt.itertuples(index=False, name=None),
-        ):
+
+        result_tuples = [self.ResultTuple._make(row) for row in self.results.to_numpy()]
+        gt_tuples = [self.GTTuple._make(row) for row in self.gt.to_numpy()]
+
+        for actual, expected in zip(result_tuples, gt_tuples):
             for metric in self.metrics:
                 actual_value = getattr(actual, metric.name)
                 expected_value = getattr(expected, metric.name)
@@ -66,14 +69,20 @@ class Evaluation:
     def __str__(self) -> str:
         "Return the results as a string"
         metrics = [metric.dict() for metric in self.metrics]
-        return json.dumps(metrics, ensure_ascii=False)
+        return json.dumps(metrics, ensure_ascii=False, sort_keys=True, indent=4)
 
-    def compare(self, actual: str, expected: str) -> float:
+    def __repr__(self) -> str:
+        "Return the results as a string"
+        return self.__str__()
+
+    def compare(self, actual, expected) -> float:
         "Compare two strings"
-        return NLP(actual.lower()).similarity(NLP(expected.lower()))
+        if actual == expected:
+            return 1
+        return NLP(str(actual).lower()).similarity(NLP(str(expected).lower()))
 
     def save(self, path: str):
         "Save the results"
         metrics = [metric.dict() for metric in self.metrics]
         with open(path, "w", encoding="utf8") as f:
-            json.dump(metrics, f, ensure_ascii=False)
+            json.dump(metrics, f, ensure_ascii=False, sort_keys=True, indent=4)
